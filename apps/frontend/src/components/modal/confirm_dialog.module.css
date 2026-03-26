@@ -1,0 +1,70 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  z-index: 55;
+}
+
+.modal {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(12, 16, 32, 0.96);
+  backdrop-filter: blur(10px);
+  padding: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.secondary,
+.primary {
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: var(--foreground);
+}
+
+.secondary {
+  border: 1px solid var(--border);
+  background: transparent;
+}
+
+.primary {
+  border: 1px solid rgba(124, 92, 255, 0.55);
+  background: rgba(124, 92, 255, 0.2);
+}
+
+.danger {
+  border-color: rgba(255, 77, 109, 0.45);
+  background: rgba(255, 77, 109, 0.14);
+}
+
+.secondary:disabled,
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
